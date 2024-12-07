@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       try {
-        const response = await fetch("http://localhost:3000/send-email", {
+        const response = await fetch("https://portfolio-gbhn7l5p8-thainas-projects-5785f71e.vercel.app", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data),

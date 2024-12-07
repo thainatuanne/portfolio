@@ -8,10 +8,10 @@ const path = require("path");
 require("dotenv").config();
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://portfolio-gbhn7l5p8-thainas-projects-5785f71e.vercel.app",
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
@@ -28,8 +28,9 @@ const transporter = nodemailer.createTransport({
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.json({ message: "API está rodando" });
 });
+
 
 app.post("/send-email", (req, res) => {
   let { email, message } = req.body;
