@@ -1,4 +1,4 @@
-# Portfólio Profissional de Trabalho
+# Portfólio
 Bem-vindo ao repositório do meu portfólio profissional! Este projeto foi criado para apresentar minhas habilidades, projetos e experiência profissional de maneira organizada e visualmente agradável.
 
 ## 🖥️ Sobre o Projeto
