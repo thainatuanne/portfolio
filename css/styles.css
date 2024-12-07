@@ -147,6 +147,10 @@ li a:hover::before {
 
 }
 
+vercel-live-feedback {
+    display: none !important;
+}
+
 /* ---- BARRA DE NAVEGAÇÃO TOPO - FIM ---- */
 
 
