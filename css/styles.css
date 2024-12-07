@@ -151,8 +151,8 @@ vercel-live-feedback {
     display: none !important;
 }
 
-#loom-companiom-mv3 {
-    display: none;
+div#loom-companiom-mv3 {
+    display: none !important;
 }
 
 /* ---- BARRA DE NAVEGAÇÃO TOPO - FIM ---- */
