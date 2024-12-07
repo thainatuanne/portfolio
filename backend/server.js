@@ -11,13 +11,15 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const corsOptions = {
-  origin: "https://portfolio-gbhn7l5p8-thainas-projects-5785f71e.vercel.app",
+  origin: "http://localhost:3000",
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname)));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(express.static(path.join(__dirname, "../frontend")));
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -33,6 +35,7 @@ app.get("/", (req, res) => {
 
 
 app.post("/send-email", (req, res) => {
+  
   let { email, message } = req.body;
 
   if (!validator.isEmail(email)) {
@@ -75,6 +78,11 @@ app.post("/send-email", (req, res) => {
       });
     }
   });
+});
+
+// Servir a aplicação frontend (HTML)
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "../frontend/index.html"));
 });
 
 app.listen(port, () => {

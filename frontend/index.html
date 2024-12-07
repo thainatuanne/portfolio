@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Thainá</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +43,7 @@
                     <span>Desenvolvedora Full Stack</span>
                 </div>
                 <div class="btn-group">
-                    <a href="./curriculo/Curriculo.pdf" target="_blank">
+                    <a href="./assets/perfil.png" target="_blank">
                         <div class="btn">Download CV</div>
                     </a>
                     <div class="btn"><a href="https://wa.me/5551999802061" target="_blank">Contato</a></div>
@@ -141,7 +140,7 @@
     <section class="contact" id="contact">
         <div class="input-box">
             <h2 id="section-title-contact" class="section-title">Entre em contato comigo</h2>
-            <form id="contactForm" action="https://portfolio-gbhn7l5p8-thainas-projects-5785f71e.vercel.app/send-email" method="POST">
+            <form id="contactForm" action="/send-email" method="POST">
                 <div class="input">
                     <i class="bi bi-envelope"></i>
                     <input class="fundo" type="email" name="email" placeholder="seuemail@gmail.com" required>
@@ -152,7 +151,6 @@
                         rows="5" required></textarea>
                 </div>
                 <button type="submit" class="btn">Enviar</button>
-
             </form>
             <div id="feedback-message"></div>
         </div>
