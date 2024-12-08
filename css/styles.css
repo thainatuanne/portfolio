@@ -618,11 +618,11 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    margin: 0;
-    padding: 0;
+    padding: 1rem 0;
     position: relative;
     bottom: 0;
     width: 100%;
+    height: auto;
 }
 
 footer ul {
@@ -635,6 +635,11 @@ footer ul {
 footer ul li a {
     color: white;
     font-weight: 300;
+}
+
+.copyright {
+    font-size: 1rem;
+    text-align: center;
 }
 
 /*Responsivo*/

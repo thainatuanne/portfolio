@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   
 </head>
 <body>
     <header class="header">
@@ -43,7 +44,7 @@
                     <span>Desenvolvedora Full Stack</span>
                 </div>
                 <div class="btn-group">
-                    <a href="./assets/perfil.png" target="_blank">
+                    <a href="./curriculo/Curriculo.pdf" target="_blank">
                         <div class="btn">Download CV</div>
                     </a>
                     <div class="btn"><a href="https://wa.me/5551999802061" target="_blank">Contato</a></div>
@@ -140,14 +141,14 @@
     <section class="contact" id="contact">
         <div class="input-box">
             <h2 id="section-title-contact" class="section-title">Entre em contato comigo</h2>
-            <form id="contactForm" action="/send-email" method="POST">
+            <form id="contactForm">
                 <div class="input">
                     <i class="bi bi-envelope"></i>
-                    <input class="fundo" type="email" name="email" placeholder="seuemail@gmail.com" required>
+                    <input class="fundo" id="email" type="email" name="email" placeholder="seuemail@gmail.com" required>
                 </div>
 
                 <div class="input">
-                    <textarea class="fundo" type="message" name="message" placeholder="Digite sua mensagem aqui..."
+                    <textarea class="fundo" id="message" type="message" name="message" placeholder="Digite sua mensagem aqui..."
                         rows="5" required></textarea>
                 </div>
                 <button type="submit" class="btn">Enviar</button>
@@ -174,7 +175,10 @@
         <p class="copyright">© 2024 Thainá Tuanne Borges da Silva. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="./js/messageEmail.js" defer></script>
+
+    <script src="./js/server.js" defer></script>
     <script src="./js/script.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </body>
 </html>
