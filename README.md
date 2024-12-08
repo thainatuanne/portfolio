@@ -14,8 +14,7 @@ O objetivo é demonstrar minhas habilidades em desenvolvimento web e criar um es
 
 - **HTML5** e **CSS3** para estrutura e estilos.
 - **JavaScript** para funcionalidades dinâmicas.
-- **Node.js** e **Express.js** para o back-end (formulário de contato).
-- **Nodemailer** para envio de e-mails.
+- **EmailJS** para envio de mensagens diretamente do formulário de contato.
 
 ## 🛠️ Funcionalidades
 
