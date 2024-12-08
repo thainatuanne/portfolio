@@ -23,6 +23,27 @@ O objetivo é demonstrar minhas habilidades em desenvolvimento web e criar um es
 - **Animações**: Adicionei efeitos com CSS (como `keyframes`) para uma experiência mais dinâmica.
 - **Demonstração de projetos**: Exibição detalhada dos meus projetos concluídos.
 
-- ### Página Inicial
+## 📬 Configuração do Formulário de Contato
 
-[![Visualizar Portfólio](assets/image.png)](https://portfolio-dtw6nmso5-thainas-projects-5785f71e.vercel.app/)
+O formulário utiliza o EmailJS para envio de mensagens:
+
+Configure sua conta no EmailJS.
+Insira o serviceID, templateID e publicKey diretamente no arquivo JavaScript.
+O formulário valida email e mensagem, garantindo funcionalidade e segurança.
+
+### Página Inicial
+
+[![Visualizar Portfólio](assets/image.png)](https://portfolio-gnd1hmzje-thainas-projects-5785f71e.vercel.app/)
+
+## 🚀 Como Executar o Projeto Localmente
+
+```bash
+1. Clone este repositório:
+  git clone https://github.com/thainatuanne/portfolio.git
+
+3. Acesse a pasta do projeto:
+  cd portfolio
+
+4. Abra o arquivo index.html diretamente no navegador ou use uma extensão como Live Server no VS Code para executar localmente.
+
+```
