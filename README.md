@@ -33,7 +33,7 @@ O formulário valida email e mensagem, garantindo funcionalidade e segurança.
 
 ### Página Inicial
 
-[![Visualizar Portfólio](assets/image.png)](https://portfolio-gnd1hmzje-thainas-projects-5785f71e.vercel.app/)
+[![Visualizar Portfólio](assets/image.png)](https://portfolio-two-sage-12.vercel.app/))
 
 ## 🚀 Como Executar o Projeto Localmente
 
