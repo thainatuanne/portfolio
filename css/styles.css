@@ -41,7 +41,6 @@ body {
 header {
     position: fixed;
     width: auto;
-    /* Ajustável */
     top: 1rem;
     left: 50%;
     transform: translateX(-50%);
@@ -76,6 +75,7 @@ header:hover {
 .logo span {
     font-family: "Roboto", Arial, sans-serif;
     font-weight: 400;
+    font-size: 1.5rem;
 }
 
 .nav-links {
@@ -642,6 +642,92 @@ footer ul li a {
     text-align: center;
 }
 
+
+.sobre-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.sobre-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+.sobre-card {
+    background: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.texto-experiencia, .texto-soft {
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-size: 1.1rem;
+    letter-spacing: 0.9px;
+    line-height: 1.6;
+}
+
+.texto-animado {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.texto-animado.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skills-icons img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10%;
+    object-fit: cover;
+    animation: float 3s ease-in-out infinite; 
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+
+
 /*Responsivo*/
 
 @media(max-width:1280px) {
@@ -735,6 +821,28 @@ footer ul li a {
     .project-card p {
         font-size: 0.9rem;
         text-align: center;
+    }
+
+    .sobre-info {
+        padding: 0 1rem;
+    }
+
+    .sobre-grid {
+        max-width: 100%;
+    }
+
+    .texto-experiencia, .texto-soft {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .skills-icons img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skills-icons {
+        gap: 0.5rem;
     }
 
 }
@@ -832,6 +940,24 @@ footer ul li a {
     .input i {
         display: none;
     }
+
+    .logo span {
+        font-size: 1.1rem;
+    }
+
+    .sobre-grid {
+        max-width: 90%;
+    }
+
+    .texto-experiencia, .texto-soft {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .skills-icons img {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 @media (max-width: 765px) {
@@ -868,6 +994,10 @@ footer ul li a {
 
     .copyright {
         font-size: 0.8rem;
+    }
+
+    .logo span {
+        font-size: 1rem;
     }
 }
 
@@ -922,5 +1052,9 @@ footer ul li a {
 
     .input i {
         display: none;
+    }
+
+    .logo span {
+        font-size: 0.9rem;
     }
 }
